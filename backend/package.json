@@ -1,4 +1,5 @@
 {
+  "homepage": "https://RajVeer0407.github.io/bookStoreApp",
   "name": "bookstore",
   "version": "1.0.0",
   "description": "mern project",
@@ -6,7 +7,9 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
